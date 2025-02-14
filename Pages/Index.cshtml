@@ -1,0 +1,16 @@
+﻿@page
+@model WebApplication1.Pages.IndexModel
+@{
+    ViewData["Title"] = "Homepage";
+}
+
+<h2>Welcome, @User.Identity.Name!</h2>
+
+<div>
+    <p><strong>Email:</strong> @Model.Email</p>
+    <p><strong>First Name:</strong> @Model.FirstName</p>
+    <p><strong>Last Name:</strong> @Model.LastName</p>
+    <p><strong>Gender:</strong> @Model.Gender</p>
+    <p><strong>Date of Birth:</strong> @Model.DateOfBirth</p>
+    <p><strong>Your NRIC:</strong> @Model.DecryptedNRIC</p>
+</div>
